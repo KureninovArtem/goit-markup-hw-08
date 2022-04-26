@@ -1,0 +1,38 @@
+.classes {
+    padding-bottom: 94px;
+}
+
+.classes-item {
+    position: relative;
+    flex-basis: calc((100% - 60px) / 3);
+    margin-left: 30px;
+}
+
+.classes-title {
+    margin-bottom: 50px;
+}
+
+.classes-list {
+    display: flex;
+    margin-left: -30px;
+}
+
+.classes-item-container {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    min-height: 70px;
+    background-color: var(--classes-item-container-color);
+}
+
+.classes-item-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primary-color-light);
+    padding-top: 27px;
+}
