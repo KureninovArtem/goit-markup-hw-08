@@ -43,11 +43,63 @@
                     </a>
                 </li>
             </ul>
+            <button type="button" class="header__mobile-menu-btn" data-menu-open>
+                <svg class="header__mobile-menu-icon" width="40" height="40">
+                    <use href="./images/sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
+        </div>
+        <!-- Mobile menu -->
+        <div class="header__mobile-menu" data-menu>
+            <div class="container header__mobile-menu-container">
+                <button type="button" class="header__mobile-menu-close-btn" data-menu-close>
+                    <svg class="header__mobile-menu-close-icon" width="40" height="40">
+                        <use href="./images/sprite.svg#menu-icon-close"></use>
+                    </svg>
+                </button>
+                <ul class="header__mobile-nav-list list">
+                    <li class="header__mobile-nav-item">
+                        <a class="header__mobile-nav-link link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="header__mobile-nav-item">
+                        <a class="header__mobile-nav-link link current-mobile" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="header__mobile-nav-item">
+                        <a class="header__mobile-nav-link link" href="">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="header__mobile-contact-list list">
+                    <li class="header__mobile-tel-item">
+                        <a class="header__mobile-tel-link link" href="tel:+380961111111">+38 096 111 11 11</a>
+                    </li>
+                    <li class="header__mobile-mail-item">
+                        <a class="header__mobile-mail-link link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="header__mobile-social-list list">
+                    <li class="header__mobile-social-item">
+                        <a class="header__mobile-social-link link" href="https://www.instagram.com" target="_blank"
+                            rel="noreferrer noopener">Instagram</a>
+                    </li>
+                    <li class="header__mobile-social-item">
+                        <a class="header__mobile-social-link link" href="https://twitter.com/" target="_blank"
+                            rel="noreferrer noopener">Twitter</a>
+                    </li>
+                    <li class="header__mobile-social-item">
+                        <a class="header__mobile-social-link link" href="https://uk-ua.facebook.com" target="_blank"
+                            rel="noreferrer noopener">Facebook</a>
+                    </li>
+                    <li class="header__mobile-social-item">
+                        <a class="header__mobile-social-link link" href="https://ru.linkedin.com/" target="_blank"
+                            rel="noreferrer noopener">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
         <!-- Portfolio main section -->
-        <section class="portfolio-main-section section">
+        <!-- <section class="portfolio-main-section section">
             <div class="container">
                 <h1 class="portfolio-main-title visually-hidden">Работы нашей студии</h1>
                 <ul class="portfolio-main-list list">
@@ -66,9 +118,9 @@
                     <li class="portfolio-main-item">
                         <button class="portfolio-btn" type="button">Маркетинг</button>
                     </li>
-                </ul>
+                </ul> -->
                 <!-- Work examples -->
-                <h2 class="work-examples-title visually-hidden">Примеры наших работ</h2>
+                <!-- <h2 class="work-examples-title visually-hidden">Примеры наших работ</h2>
                 <ul class="work-examples-list list">
                     <li class="work-examples-item">
                         <a class="work-examples-link link" href="">
@@ -197,10 +249,10 @@
                     </li>
                 </ul>
             </div>
-        </section>
+        </section> -->
     </main>
     <!-- Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="footer__container container">
             <div class="footer__contact-container">
                 <a class="logo link" lang="en" href="./index.html"><span class="footer__logo_accent accent">Web</span><span
@@ -273,7 +325,9 @@
                 </div>
             </form>
         </div>
-    </footer>
+    </footer> -->
+
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
