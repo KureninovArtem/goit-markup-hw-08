@@ -45,11 +45,6 @@ address {
     color: var(--accent-color);
 }
 
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .container {
     padding-left: 15px;
     padding-right: 15px;
@@ -71,9 +66,22 @@ address {
 }
 }
 
+// - 1199px
+@media screen and (max-width: 1199px) {
+    .section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+}
+}
+
 // 1200px +
 @media screen and (min-width: 1200px) {
     .container {
     width: 1200px;
+}
+
+    .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 }

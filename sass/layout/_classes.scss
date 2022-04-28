@@ -1,3 +1,12 @@
+// - 1199px
+@media screen and (max-width: 1199px) {
+    .classes {
+        display: none;
+    }
+}
+
+// 1200px +
+@media screen and (min-width: 1200px) {
 .classes {
     padding-bottom: 94px;
 }
@@ -35,4 +44,5 @@
     text-transform: uppercase;
     color: var(--primary-color-light);
     padding-top: 27px;
+}
 }
