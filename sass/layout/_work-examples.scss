@@ -1,22 +1,22 @@
-.work-examples-list {
+.portfolio__work-examples-list {
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
 }
 
-.work-examples-container {
+.portfolio__work-examples-container {
     padding: 20px 24px;
 }
 
-.work-examples-item {
+.portfolio__work-examples-item {
     flex-basis: 370px;
     margin-left: 30px;
     margin-top: 30px;
     border-bottom: 1px solid var(--secondary-border-color);
 }
 
-.work-examples-caption {
+.portfolio__work-examples-caption {
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -24,7 +24,7 @@
     color: var(--primary-text-color-dark);
 }
 
-.work-exemples-text {
+.portfolio__work-exemples-text {
     padding-top: 4px;
     font-size: 16px;
     line-height: 1.87;
@@ -32,7 +32,7 @@
     color: var(--secondary-text-color);
 }
 
-.work-examples-link {
+.portfolio__work-examples-link {
     display: block;
     &:hover,
     &:focus {
@@ -41,12 +41,12 @@
     }
 }
 
-.work-examples-wrapper {
+.portfolio__work-examples-wrapper {
     position: relative;
     overflow: hidden;
 }
 
-.overlay {
+.portfolio__overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -61,8 +61,8 @@
     overflow: auto;
     transform: translateY(100%);
     transition: transform 300ms linear;
-    .work-examples-link:hover &,
-    .work-examples-link:focus & {
+    .portfolio__work-examples-link:hover &,
+    .portfolio__work-examples-link:focus & {
         transform: translateY(0%);
     }
 }
