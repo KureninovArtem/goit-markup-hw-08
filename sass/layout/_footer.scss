@@ -136,12 +136,20 @@
         margin-top: 60px;
         margin-bottom: 60px;
     }
+
+    .footer__form-input {
+        width: 100%;
+    }
 }
 
 // 768px +
 @media screen and (min-width: 768px) {
     .footer__wrapper {
         display: flex;
+    }
+
+    .footer__form-input {
+        width: 450px;
     }
 }
 
@@ -179,10 +187,6 @@
 
     .footer__form-title {
         text-align: center;
-    }
-
-    .footer__form-input {
-        width: 450px;
     }
 
     .footer__form-btn {

@@ -11,7 +11,7 @@
     padding-bottom: 94px;
 }
 
-.classes-item {
+.classes__item {
     position: relative;
     flex-basis: calc((100% - 60px) / 3);
     margin-left: 30px;
@@ -21,12 +21,12 @@
     margin-bottom: 50px;
 }
 
-.classes-list {
+.classes__list {
     display: flex;
     margin-left: -30px;
 }
 
-.classes-item-container {
+.classes__item-container {
     position: absolute;
     left: 0px;
     bottom: 0px;
@@ -35,7 +35,7 @@
     background-color: var(--classes-item-container-color);
 }
 
-.classes-item-title {
+.classes__item-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
