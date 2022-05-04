@@ -51,7 +51,7 @@
     }
 
     .features__item {
-        flex-basis: 354px;
+        flex-basis: calc((100% - 30px) / 2);
         &:nth-child(2n+1) {
             margin-right: 30px;
         }

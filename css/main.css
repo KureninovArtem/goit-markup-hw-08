@@ -389,6 +389,7 @@ address {
   }
   .header__mobile-menu {
     position: absolute;
+    z-index: 1;
     top: 0;
     left: 0;
     width: 100%;
@@ -753,7 +754,7 @@ address {
     flex-wrap: wrap;
   }
   .features__item {
-    flex-basis: 354px;
+    flex-basis: calc((100% - 30px) / 2);
   }
   .features__item:nth-child(2n+1) {
     margin-right: 30px;
@@ -876,15 +877,12 @@ address {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social__list-link:hover .team__social-list-icon,
-.social__list-link:focus .team__social-list-icon {
+.team__social-list-link:hover .team__social-list-icon,
+.team__social-list-link:focus .team__social-list-icon {
   fill: var(--primary-color-light);
 }
 
 @media screen and (max-width: 767px) {
-  .team__item {
-    flex-basis: 450px;
-  }
   .team__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -909,7 +907,7 @@ address {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .team__item {
-    flex-basis: 354px;
+    flex-basis: calc((100% - 60px) / 2);
   }
   .team__wrapper {
     padding-left: 74px;
@@ -931,7 +929,7 @@ address {
     margin-bottom: 50px;
   }
   .team__item {
-    flex-basis: 270px;
+    flex-basis: calc((100% - 120px) / 4);
     padding-bottom: 30px;
   }
   .team__wrapper {
@@ -1077,22 +1075,8 @@ address {
   }
 }
 
-.portfolio__work-examples-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-}
-
 .portfolio__work-examples-container {
   padding: 20px 24px;
-}
-
-.portfolio__work-examples-item {
-  flex-basis: 370px;
-  margin-left: 30px;
-  margin-top: 30px;
-  border-bottom: 1px solid var(--secondary-border-color);
 }
 
 .portfolio__work-examples-caption {
@@ -1144,6 +1128,38 @@ address {
 .portfolio__work-examples-link:hover .portfolio__overlay,
 .portfolio__work-examples-link:focus .portfolio__overlay {
   transform: translateY(0%);
+}
+
+@media screen and (max-width: 767px) {
+  .portfolio__work-examples-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__work-examples-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .portfolio__work-examples-item {
+    margin-left: 30px;
+    margin-top: 30px;
+    border-bottom: 1px solid var(--secondary-border-color);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__work-examples-item {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio__work-examples-item {
+    flex-basis: calc((100% - 90px) / 3);
+  }
 }
 
 .footer {
