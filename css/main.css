@@ -120,7 +120,6 @@ address {
 
 .logo {
   font-family: var(--secondary-font-family);
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
@@ -130,7 +129,6 @@ address {
   .classes__title,
   .team__title,
   .clients__title {
-    font-weight: 700;
     font-size: 28px;
     line-height: 1.17;
     text-align: center;
@@ -142,7 +140,6 @@ address {
   .classes__title,
   .team__title,
   .clients__title {
-    font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -171,14 +168,12 @@ address {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
   background-color: var(--primary-color-light);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
-.moda-close-btn {
+.modal__close-btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -195,50 +190,47 @@ address {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.moda-close-btn:hover, .moda-close-btn:focus {
+.modal__close-btn:hover, .modal__close-btn:focus {
   fill: var(--accent-color);
 }
 
-.contact-form {
+.modal__contact-form {
   padding-top: 40px;
-  padding-left: 41px;
-  padding-right: 39px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-.modal-title {
+.modal__title {
   display: block;
-  font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
 }
 
-.contact-form-label {
+.modal__contact-form-label {
   display: grid;
   margin-bottom: 10px;
 }
 
-.coment-form-label {
+.modal__coment-form-label {
   display: grid;
 }
 
-.label-name {
-  font-weight: 400;
+.modal__label-name {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--secondary-text-color);
 }
 
-.contact-form-input-wrapper {
+.modal__contact-form-input-wrapper {
   position: relative;
   display: block;
   margin-top: 4px;
 }
 
-.contact-form-input {
+.modal__contact-form-input {
   width: 100%;
   height: 40px;
   padding-left: 42px;
@@ -247,12 +239,12 @@ address {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-form-input:focus {
+.modal__contact-form-input:focus {
   outline: none;
   border-color: var(--accent-color);
 }
 
-.contact-form-icon {
+.modal__contact-form-icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -261,11 +253,11 @@ address {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-form-input:focus + .contact-form-icon {
+.modal__contact-form-input:focus + .modal__contact-form-icon {
   fill: var(--accent-color);
 }
 
-.contact-form-message {
+.modal__contact-form-message {
   width: 100%;
   height: 120px;
   margin-top: 4px;
@@ -276,56 +268,51 @@ address {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-form-message:focus {
+.modal__contact-form-message:focus {
   outline: none;
   border-color: var(--accent-color);
 }
 
-.contact-form-message::placeholder {
-  font-weight: 400;
+.modal__contact-form-message::placeholder {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--placeholder-color);
 }
 
-.contact-form-checkbox-label {
+.modal__contact-form-checkbox-label {
   display: flex;
   align-items: center;
   margin-top: 20px;
   margin-bottom: 30px;
 }
 
-.contact-form-checkbox-wrapper {
-  font-size: 14px;
-  line-height: 1.7;
+.modal__contact-form-checkbox-wrapper {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
-.contract-link {
+.modal__contract-link {
   color: var(--accent-color);
 }
 
-.checkbox-icon {
-  margin-left: 12px;
-  margin-right: 8.38px;
+.modal__checkbox-icon {
   border: 2px solid var(--primary-text-color-dark);
   border-radius: 2px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-form-checkbox:hover + .checkbox-icon,
-.contact-form-checkbox:focus + .checkbox-icon {
+.modal__contact-form-checkbox:hover + .checkbox-icon,
+.modal__contact-form-checkbox:focus + .checkbox-icon {
   border: 2px solid var(--black-color);
 }
 
-.contact-form-checkbox:checked + .checkbox-icon {
+.modal__contact-form-checkbox:checked + .modal__checkbox-icon {
   border: 2px solid var(--accent-color);
   background-color: var(--accent-color);
 }
 
-.contact-form-submit-btn {
+.modal__contact-form-submit-btn {
   display: block;
   margin: 0 auto;
   min-width: 200px;
@@ -343,8 +330,54 @@ address {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-form-submit-btn:hover, .contact-form-submit-btn:focus {
+.modal__contact-form-submit-btn:hover, .modal__contact-form-submit-btn:focus {
   background-color: var(--main-button-accent);
+}
+
+@media screen and (max-width: 479px) {
+  .modal {
+    width: calc(100% - 30px);
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .modal {
+    height: 609px;
+  }
+  .modal__title {
+    line-height: 1.5;
+  }
+  .modal__contact-form-checkbox-wrapper {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+  .modal__checkbox-icon {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+  .modal__title {
+    line-height: 1.15;
+  }
+  .modal__contact-form-checkbox-wrapper {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+  .modal__checkbox-icon {
+    margin-left: 12px;
+    margin-right: 8.38px;
+  }
 }
 
 .header__logo_dark {
@@ -534,7 +567,6 @@ address {
     background-color: var(--accent-color);
   }
   .header__contact-list {
-    font-weight: 500;
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.02em;
@@ -718,7 +750,6 @@ address {
 }
 
 .features__title {
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -1177,7 +1208,6 @@ address {
 }
 
 .footer__contact-list {
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -1240,7 +1270,6 @@ address {
 
 .footer__form-title {
   margin-bottom: 20px;
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -1259,7 +1288,6 @@ address {
 }
 
 .footer__form-input::placeholder {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;

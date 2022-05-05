@@ -13,7 +13,6 @@
 }
 
 .footer__contact-list {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -74,7 +73,6 @@
 
 .footer__form-title {
     margin-bottom: 20px;
-    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -93,7 +91,6 @@
     background-color: transparent;
     color: var(--third-text-color);
     &::placeholder {
-        font-weight: 400;
         font-size: 16px;
         line-height: 1.25;
         letter-spacing: 0.03em;
