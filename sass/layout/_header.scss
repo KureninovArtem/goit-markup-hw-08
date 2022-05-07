@@ -46,7 +46,7 @@
     }
 
     .header__mobile-menu {
-        position: absolute;
+        position: fixed;
         z-index: 1;
         top: 0;
         left: 0;
@@ -70,6 +70,10 @@
     }
 
     .header__mobile-menu-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         position: relative;
         padding-top: 48px;
         padding-bottom: 48px;
@@ -138,16 +142,16 @@
     }
 
     .header__mobile-tel-item {
-        margin-top: 306px;
         margin-bottom: 32px;
     }
 
-    .header__mobile-mail-item {
+    .header__mobile-contact-list {
         margin-bottom: 64px;
     }
 
     .header__mobile-social-list {
         display: flex;
+        flex-wrap: wrap;
     }
 
     .header__mobile-social-link {

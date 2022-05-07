@@ -1,5 +1,12 @@
 .portfolio__work-examples-container {
     padding: 20px 24px;
+    .portfolio__work-examples-item:first-child & {
+        padding-bottom: 56px;
+    }
+}
+
+.portfolio__work-examples-item {
+    border: 1px solid var(--secondary-border-color);
 }
 
 .portfolio__work-examples-caption {
@@ -71,7 +78,6 @@
 .portfolio__work-examples-item {
     margin-left: 30px;
     margin-top: 30px;
-    border-bottom: 1px solid var(--secondary-border-color);
 }
 }
 
